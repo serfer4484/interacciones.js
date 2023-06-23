@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="body">
+    
+    <section id="interacciones">
+
+        <h2>INTERACCIONES Y MANIPULACION DE HTML Y CSS CON JAVASCRIPT</h2>
+        <button onclick="circulo()">CIRCULO</button>
+        <button onclick="rectangulo()">RECTANGULO</button>
+        <button>DEGRADADO</button>
+        <button>ONDAS</button>
+        <button>GIF</button>
+        <button>ROMBO</button>
+        <button>TRIANGULO</button>
+        <button onclick="panel_lateral()">PANEL LATERAL</button>
+        <button onclick="panel_superior()">PANEL SUPERIOR</button>
+        <button onclick="fondo()">FONDO</button> 
+
+    </section>
+
+    <section id="cont-figura">
+        <div id="figura" class=""></div>
+
+    </section>
+
+    <div id="panel-lateral">
+        <button href="#"class="close" onclick="panel_lateral()">X</button>
+        <h3>Menú Principal</h3>
+            <ul>
+                <a href="#">Inicio</a>
+                <a href="#">Productos</a>
+                <a href="#">Ventas</a>
+                <a href="#">Inventario</a>
+                <a href="#">Proveedores</a>
+            </ul>
+    </div>
+
+    <div id="panel-superior">
+        <button href="#"class="close" onclick="panel_superior()">X</button>
+        <h3>VIDEO</h3>
+        <iframe width="400" height="200" src="https://www.youtube.com/embed/HtMhBDWkOKg?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+   <script src="js/main.js"></script> 
+</body>
+</html>

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+/*enlace para importar las fuentes desde google font*/
+*{
+    font-family: 'Dancing Script', cursive;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px;
+    text-align: center;
+    background: url(../img/img-2.png);
+    background-size: cover;
+}
+
+body #body .img-2{
+    background: url(../img/fondo.png);
+    background-size: cover;
+}
+
+#interacciones{
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgb(199, 236, 226);
+    border-radius:8px ;
+    border: 2px solid #fff; 
+
+}
+#interaciones h2{
+    font-size: 45px;
+    color: #3b0404;
+    margin-bottom: 20px;
+    
+}
+#interacciones button{
+    background: rgba(0,0,255,0.2);
+    color: rgb(7, 8, 8);
+    border-radius:4px ;
+    padding: 8px 12px;
+    border: 1px solid #090909;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 4px;
+}
+
+#cont-figura{
+    width: 80%;
+    margin: 40px auto 0;
+    padding: 30px;
+    background: rgb(217, 245, 237);;
+    border-radius:8px ;
+    border: 2px solid #323e41
+
+}
+#figura{
+    width: 300px;
+    height: 300px;
+    margin: 40px auto;
+    background: rgb(74, 85, 233);
+    transition: 1s;
+   
+}
+#figura.circulo{
+    transform: rotate(-360deg);
+    border-radius: 50%;
+    background: cadetblue;
+}
+#figura.rectangulo{
+    width: 600px;
+    height: 300px; 
+    background: rgb(155, 228, 209);
+    background: linear-gradient(90deg,rgba(131,58,180,0.5) 0%, rgba(253,28,28,0.5) 50%, rgba(252,176,69,0.5) 100%);
+    
+}
+
+#panel-lateral{
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    left: -550px;
+    top: 0;
+    background: aliceblue;
+    z-index: 999;
+    padding-top: 150px;
+    padding-left: 150px;
+    transition: .5s;
+}
+#panel-lateral.activo{
+    left: 0;
+}
+
+#panel-lateral h3{
+    color: blueviolet;
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 45px;
+}
+
+#panel-lateral a{
+    display: block;
+    padding: 20px;
+    width: 220px;
+    background: #323e41;
+    color: antiquewhite;
+    margin: 5px 0;
+    text-decoration: none;
+}
+#panel-lateral .close{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: #090909;
+    font-size: 30px;
+    text-decoration: none;
+    background: transparent;
+    border: 0;
+}
+
+#panel-superior{
+    width: 300px;
+    height: 50vh;
+    position: absolute;
+    left: 0;
+    top: -80vh;
+    background: aliceblue;
+    z-index: 999;
+    padding-top: 150px;
+    padding-left: 150px;
+    transition: .5s;
+}
+#panel-superior.activo{
+    top: 0;
+}
+
+#panel-superior h3{
+    color: blueviolet;
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 45px;
+}
+
+#panel-superior a{
+    display: block;
+    padding: 20px;
+    width: 220px;
+    background: #323e41;
+    color: antiquewhite;
+    margin: 5px 0;
+    text-decoration: none;
+}
+#panel-superior .close{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: #090909;
+    font-size: 30px;
+    text-decoration: none;
+    background: transparent;
+    border: 0;
+}
